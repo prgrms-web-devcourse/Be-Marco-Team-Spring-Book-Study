@@ -9,12 +9,12 @@ public class MemberListPrinter {
 	@Autowired
 	private MemberDao memberDao;
 	@Autowired
-	private MemberSummaryPrinter mprinter;
+	private MemberPrinter mprinter;
 
 	public MemberListPrinter() {
 	}
 
-	public MemberListPrinter(MemberDao memberDao, MemberSummaryPrinter printer) {
+	public MemberListPrinter(MemberDao memberDao, MemberPrinter printer) {
 		this.memberDao = memberDao;
 		this.mprinter = printer;
 	}

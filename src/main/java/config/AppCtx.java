@@ -25,15 +25,10 @@ public class AppCtx {
 	}
 	
 	@Bean
-	@Qualifier("printer")
 	public MemberPrinter memberPrinter1() {
 		return new MemberPrinter();
 	}
 
-	@Bean
-	public MemberPrinter memberPrinter2() {
-		return new MemberSummaryPrinter();
-	}
 
 	@Bean
 	public MemberListPrinter listPrinter() {
