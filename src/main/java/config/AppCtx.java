@@ -29,10 +29,16 @@ public class AppCtx {
 		return new MemberPrinter();
 	}
 
+	@Bean
+	@Qualifier("printer")
+	public MemberSummaryPrinter memberPrinter2() {
+		return new MemberSummaryPrinter();
+	}
+
 
 	@Bean
 	public MemberListPrinter listPrinter() {
-		return new MemberListPrinter();
+		return new MemberListPrinter(memberDao(), memberPrinter1());
 	}
 	
 	@Bean
