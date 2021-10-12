@@ -9,13 +9,12 @@ public class MemberListPrinter {
 	@Autowired
 	private MemberDao memberDao;
 	@Autowired
-	//maybe injected  memberPrinter2()
-	private MemberPrinter mprinter;
+	private MemberSummaryPrinter mprinter;
 
 	public MemberListPrinter() {
 	}
 
-	public MemberListPrinter(MemberDao memberDao, MemberPrinter printer) {
+	public MemberListPrinter(MemberDao memberDao, MemberSummaryPrinter printer) {
 		this.memberDao = memberDao;
 		this.mprinter = printer;
 	}
