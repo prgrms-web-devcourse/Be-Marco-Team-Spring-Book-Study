@@ -31,12 +31,12 @@ public class AppCtx {
 	}
 	
 	@Bean
-	public MemberPrinter memberPrinter1() {
+	public MemberPrinter printer() {
 		return new MemberPrinter();
 	}
 
 	@Bean
-	@Qualifier("printer")
+	@Qualifier("mprinter")
 	public MemberPrinter memberPrinter2() {
 		return new MemberPrinter();
 	}
