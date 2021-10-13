@@ -1,7 +1,9 @@
 package com.example.chap46.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ChangePasswordService {
 
 	@Autowired
@@ -21,7 +23,7 @@ public class ChangePasswordService {
 		this.memberRepository = memberRepository;
 	}
 
-	public MemberRepository getMemberDao() {
+	public MemberRepository getMemberRepository() {
 		return memberRepository;
 	}
 }

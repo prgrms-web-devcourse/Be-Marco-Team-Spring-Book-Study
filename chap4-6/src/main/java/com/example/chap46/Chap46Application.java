@@ -11,7 +11,7 @@ public class Chap46Application {
 
     public static void main(String[] args) {
         var ctx = new AnnotationConfigApplicationContext(AppCtx.class);
-        System.out.println(ctx.getBean(ChangePasswordService.class).getMemberDao());
+        System.out.println(ctx.getBean(ChangePasswordService.class).getMemberRepository());
 
 //        SpringApplication.run(Chap46Application.class, args);
     }

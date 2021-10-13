@@ -3,7 +3,9 @@ package com.example.chap46.spring;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component("listPrinter")
 public class MemberListPrinter {
 
 	private MemberRepository memberRepository;
@@ -28,7 +30,6 @@ public class MemberListPrinter {
 	}
 	
 	@Autowired
-//	@Qualifier("summaryPrinter")
 	public void setMemberPrinter(MemberSummaryPrinter printer) {
 		this.printer = printer;
 	}

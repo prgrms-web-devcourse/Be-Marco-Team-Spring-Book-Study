@@ -2,14 +2,16 @@ package com.example.chap46.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component("infoPrinter")
 public class MemberInfoPrinter {
 
-	private MemberRepository memberRepository;
+	private MemberRepository memDao;
 	private MemberPrinter printer;
 
 	public void printMemberInfo(String email) {
-		Member member = memberRepository.selectByEmail(email);
+		Member member = memDao.selectByEmail(email);
 		if (member == null) {
 			System.out.println("데이터 없음\n");
 			return;
@@ -20,7 +22,7 @@ public class MemberInfoPrinter {
 
 	@Autowired
 	public void setMemberDao(MemberRepository memberRepository) {
-		this.memberRepository = memberRepository;
+		this.memDao = memberRepository;
 	}
 
 	@Autowired
