@@ -39,4 +39,9 @@ public class AppCtx {
 	public MemberDao memberDao2() {
 		return new MemberDao();
 	}
+
+	@Bean
+	public Client client() {
+		return new Client("maenguin");
+	}
 }
