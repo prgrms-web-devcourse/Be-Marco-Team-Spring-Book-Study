@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25d64fa3-2edb-45a7-9289-2930c2b7d843" name="Default Changelist" comment="" />
+    <list default="true" id="25d64fa3-2edb-45a7-9289-2930c2b7d843" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/Chap46Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/Chap46Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/config/AppCtx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/config/ManualBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/config/NoProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/main/MainForSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring/ChangePasswordService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring/DuplicateMemberException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring/MemberInfoPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring/MemberListPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring/MemberNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring/MemberPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring/MemberRegisterService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring/MemberSummaryPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring/RegisterRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring/VersionPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring/WrongIdPasswordException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap4-6/src/main/java/com/example/chap46/spring2/MemberRegisterService.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +30,31 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="LeeJuOh/#4-#6" />
+                    <option name="lastUsedInstant" value="1634107484" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1634107483" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectId" id="1zRO1YY6Q1KjwNkVp8EQG7YnASs" />
   <component name="ProjectViewState">
@@ -21,6 +67,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -32,6 +83,8 @@
       <updated>1634107218793</updated>
       <workItem from="1634107220052" duration="39000" />
       <workItem from="1634107270796" duration="72000" />
+      <workItem from="1634107409622" duration="1282000" />
+      <workItem from="1634184864544" duration="599000" />
     </task>
     <servers />
   </component>
@@ -48,5 +101,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
