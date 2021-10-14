@@ -5,10 +5,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import org.springframework.context.annotation.FilterType;
 import spring.*;
 
 @Configuration
-@ComponentScan(basePackages = {"spring"})
+@ComponentScan(basePackages = {"spring"},
+//	excludeFilters = @ComponentScan.Filter(type = FilterType.REGEX, pattern = "spring\\..*Dao") //정규표현식으로 필터링
+//	excludeFilters = @ComponentScan.Filter(type = FilterType.ASPECTJ, pattern = "spring.*Dao")	//AspectJ 패턴으로 필터링
+//	excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = ManualBean.class) //Annotation으로 필터링
+	excludeFilters = @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = MemberDao.class) //특정 타입과 그 하위 타입 필터링
+)
 public class AppCtx {
 
 	@Bean

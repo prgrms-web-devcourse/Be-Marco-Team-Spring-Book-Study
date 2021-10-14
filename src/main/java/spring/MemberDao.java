@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
+@ManualBean
 public class MemberDao {
 
 	private static long nextId = 0;
