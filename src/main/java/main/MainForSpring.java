@@ -24,7 +24,11 @@ public class MainForSpring {
 	
 	public static void main(String[] args) throws IOException {
 		ctx = new AnnotationConfigApplicationContext(AppCtx.class);
-		
+
+		for (String arg : ctx.getBeanDefinitionNames()) {
+			System.out.println(arg);
+		}
+
 		BufferedReader reader = 
 				new BufferedReader(new InputStreamReader(System.in));
 		while (true) {
