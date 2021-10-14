@@ -44,4 +44,9 @@ public class AppCtx {
 	public Client client() {
 		return new Client("maenguin");
 	}
+
+	@Bean(initMethod = "connect", destroyMethod = "close")
+	public Client2 client2() {
+		return new Client2("maenguin");
+	}
 }
