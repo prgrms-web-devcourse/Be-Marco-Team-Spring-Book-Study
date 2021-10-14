@@ -9,8 +9,11 @@ public class Main {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppCtx.class);
-        Client2 client = ctx.getBean(Client2.class);
-        client.send();
+        Client client = ctx.getBean(Client.class);
+        Client client2 = ctx.getBean(Client.class);
+        System.out.println(client == client2);
+        System.out.println("client = " + client);
+        System.out.println("client2 = " + client2);
         ctx.close();
     }
 }
