@@ -11,11 +11,7 @@ import java.util.Arrays;
 @Aspect
 public class ExeTimeAspect {
 
-	@Pointcut("execution(public * chap07..*(..))")
-	private void publicTarget() {
-	}
-
-	@Around("publicTarget()")
+	@Around("CommonPointcut.commonTarget()")
 	public Object measure(ProceedingJoinPoint joinPoint) throws Throwable {
 		long start = System.nanoTime();
 		try {

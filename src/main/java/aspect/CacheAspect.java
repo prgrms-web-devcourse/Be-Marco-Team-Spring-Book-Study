@@ -13,11 +13,7 @@ public class CacheAspect {
 
 	private Map<Long, Object> cache = new HashMap<>();
 
-	@Pointcut("execution(public * chap07..*(long))")
-	public void cacheTarget() {
-	}
-	
-	@Around("cacheTarget()")
+	@Around("CommonPointcut.commonTarget()")
 	public Object execute(ProceedingJoinPoint joinPoint) throws Throwable {
 		Long num = (Long) joinPoint.getArgs()[0];
 		if (cache.containsKey(num)) {
