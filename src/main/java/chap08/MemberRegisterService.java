@@ -1,6 +1,7 @@
 package chap08;
 
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 public class MemberRegisterService {
 	private MemberDao memberDao;
@@ -10,8 +11,8 @@ public class MemberRegisterService {
 	}
 
 	public Long regist(RegisterRequest req) {
-		Member member = memberDao.selectByEmail(req.getEmail());
-		if (member != null) {
+		Optional<Member> member = memberDao.selectByEmail(req.getEmail());
+		if (member.isPresent()) {
 			throw new DuplicateMemberException("dup email " + req.getEmail());
 		}
 		Member newMember = new Member(

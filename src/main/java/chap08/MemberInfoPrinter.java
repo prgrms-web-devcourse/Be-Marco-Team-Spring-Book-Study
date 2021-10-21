@@ -1,7 +1,8 @@
 package chap08;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+
+import java.util.Optional;
 
 public class MemberInfoPrinter {
 
@@ -9,11 +10,12 @@ public class MemberInfoPrinter {
 	private MemberPrinter printer;
 
 	public void printMemberInfo(String email) {
-		Member member = memDao.selectByEmail(email);
-		if (member == null) {
+		Optional<Member> optionalMember = memDao.selectByEmail(email);
+		if (optionalMember.isEmpty()) {
 			System.out.println("데이터 없음\n");
 			return;
 		}
+		Member member = optionalMember.get();
 		printer.print(member);
 		System.out.println();
 	}
@@ -24,7 +26,6 @@ public class MemberInfoPrinter {
 	}
 
 	@Autowired
-	@Qualifier("printer")
 	public void setPrinter(MemberPrinter printer) {
 		this.printer = printer;
 	}
