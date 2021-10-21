@@ -7,14 +7,15 @@ import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.core.annotation.Order;
 
 
 @Aspect
-// @Order(1)
+@Order(1)
 public class ExeTimeAspect {
 
     @Pointcut("execution(public * com.example.spring5.chap7.calculator..*(..))")
-    private void publicTarget() {
+    public void publicTarget() {
     }
 
     @Around("publicTarget()")
@@ -30,8 +31,8 @@ public class ExeTimeAspect {
                 joinPoint.getTarget().getClass().getSimpleName(),
                 sig.getName(), Arrays.toString(joinPoint.getArgs()),
                 (finish - start));
-            System.out.println(
-                MessageFormat.format("args: {0}", Arrays.toString(joinPoint.getArgs())));
+//            System.out.println(
+//                MessageFormat.format("args: {0}", Arrays.toString(joinPoint.getArgs())));
         }
     }
 }
